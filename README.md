@@ -1,55 +1,66 @@
-# React + TypeScript + Vite
+# Sleepr
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern sleep tracking and journaling application to help improve your sleep quality through AI-powered insights and recommendations.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Sleep Statistics
+- Track daily sleep hours
+- Visual weekly sleep patterns through interactive graphs
+- Add sleep records with an intuitive form interface
+- Expanded calendar view for monthly tracking
 
-## Expanding the ESLint configuration
+### Journal Entries
+- Daily mood and sleep quality journaling
+- AI-powered sentiment analysis
+- Personalized activity recommendations based on journal entries
+- Weekly journal review with expanded view
+- Guided journaling with helpful prompts
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### AI Sleep Advice
+- Personalized sleep improvement recommendations
+- Activity suggestions based on sleep patterns
+- Time estimates for recommended activities
+- Visual representation of sleep quality trends
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Feedback System
+- Interactive feedback form
+- Sleep improvement progress tracking
+- Customized activity recommendations
+- Preview text functionality for better user experience
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Upcoming Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Enhanced Sleep Tracking
+- Weekly and monthly view options
+- Detailed sleep statistics
+- Expanded calendar interface
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# sleepr-frontend
+2. Journal Improvements
+- Modal-based expanded view
+- Weekly sentiment analysis
+- AI-powered activity recommendations including:
+  - Activity descriptions
+  - Optimal timing (morning/evening)
+  - Expected duration
+
+3. Activity Recommendations
+- Sleep pattern-based advice
+- Activity duration estimates
+- Visual aids for better understanding
+
+4. Feedback System Enhancement
+- Improved feedback form
+- Three-activity recommendation system
+- Preview text functionality
+
+5. Technical Improvements
+- Database integration
+- Enhanced data persistence
+- Improved performance optimizations
+
+## Tech Stack
+- React
+- TypeScript
+- Tailwind CSS
+- AI/ML Integration (Coming Soon)

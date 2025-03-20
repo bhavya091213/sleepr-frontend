@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+@theme {
+  --color-primary: #E0FBFC; /* Light Cyan */
+  --color-secondary: #C2DFE3; /* Light Blue */
+  --color-tertiary: #9DB4C0; /* Cadet Gray */
+  --color-quaternary: #5C6B73; /* Payne's Gray */
+  --color-quinary: #253237; /* Gunmetal */
+  --color-darkest: #13181A;  /* Dark */
+  --color-darkerQuinary: #252b2e; /*Darker Quinary*/
+
+  --font-display: "Satoshi", "sans-serif";
+
+  --breakpoint-3xl: 120rem;
+
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+}
+
+/* Typing animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Tailwind utility for typing effect */
+@layer utilities {
+  .animate-typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid var(--color-secondary);
+    animation: typing 4s steps(6) infinite alternate, blink .7s infinite
+  }
+}

@@ -8,14 +8,14 @@ export const Dashboard = () => {
     <>
       <div className="min-h-fit">
         <header className="bg-darkest shadow-sm shadow-secondary flex justify-center items-center">
-          <div className="md:px-5 pt-8 pb-4 sm:px-6 lg:px-8">
+          <div className="md:px-5 xs:px-5 pt-8 pb-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center">
             <h1 className="text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
               hope you had good sleep!
             </h1>
           </div>
         </header>
         <main className="flex-row">
-          <div className="px-5 bg-darkest min-h-screen w-screen">
+          <div className="px-5 bg-darkest min-h-screen w-screen space-y-10">
             <div className="mx-auto md:p-8 flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-20">
               <SleepStatsCard />
               <JournalCard />

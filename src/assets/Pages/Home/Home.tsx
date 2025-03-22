@@ -52,9 +52,9 @@ export const Home = () => {
         {/* Hero Page */}
         <div className="">
           <div className="relative isolate px-6 pt-14 lg:px-8">
-            <div className="mx-auto max-w-2xl py-24 sm:py-24 lg:py-24 h-[50%]">
-              <div className="text-center">
-                <h1 className="text-10xl font-extrabold tracking-tight text-balance text-primary sm:text-9xl">
+            <div className="mx-auto max-w-2xl pb-24  pt-10 h-[50%]">
+              <div className=" flex flex-col text-center justify-center items-center">
+                <h1 className="lg:text-9xl font-extrabold tracking-tight text-balance text-primary xs:text-7xl">
                   sleepr
                 </h1>
                 <p className="mt-8 text-lg font-medium text-semibold text-secondary sm:text-xl/8">
@@ -80,9 +80,9 @@ export const Home = () => {
         </div>
         {/* Rest of the homepage */}
         {/* screenshot */}
-        <div className="bg-gradient-to-r from-darkest to-quinary ">
+        <div className=" ">
           <div className=" flex justify-center items-center">
-            <div className="mx-20  h-screen w-[100%]">
+            <div className="mx-auto  aspect-video">
               <div className="bg-darkerQuinary rounded-3xl aspect-video flex flex-col justify-center items-center">
                 <div className=" p-[0.5rem] w-[99%] h-[100%]  ">
                   <img src="/image.png" className="rounded-2xl aspect-video " />
@@ -92,13 +92,13 @@ export const Home = () => {
           </div>
         </div>
         {/* Feature list (2 x 2) */}
-        <div className="bg-gradient-to-r from-darkest to-quinary  py-12 pb-100">
+        <div className=" py-12 pb-100">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:text-center">
               <h2 className="text-base/7 font-semibold text-tertiary">
                 more sleep, more peace
               </h2>
-              <p className="mt-2 text-9xl font-semibold tracking-tight text-pretty text-primary sm:text-7xl lg:text-balance">
+              <p className="mt-2 lg:text-8xl font-semibold tracking-tight text-pretty text-primary md:text-2xl xs:text-5xl lg:text-balance">
                 boost your mood, lower your stress
               </p>
               <p className="mt-6 text-lg/8 text-tertiary">

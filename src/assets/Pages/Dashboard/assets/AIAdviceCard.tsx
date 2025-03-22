@@ -17,7 +17,7 @@ export const AIAdviceCard = () => {
       plusButton={false}
       onPlusClick={handlePlusClick}
     >
-      <div className="flex flex-row justify-center items-center py-4 space-x-2">
+      <div className="flex flex-row justify-center items-center py-4 space-x-2 overflow-scroll">
         <ActivityCards
           activity="swimming"
           description="take a couple laps in the pool to cool off!"

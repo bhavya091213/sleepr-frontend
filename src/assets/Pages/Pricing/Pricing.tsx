@@ -19,7 +19,7 @@ const tiers = [
     name: "sleepaholic",
     id: "tier-sleepaholic",
     href: "#",
-    priceMonthly: "$99",
+    priceMonthly: "$5",
     description: "for slumberers who really need their beauty sleep",
     features: [
       "journaling",
@@ -28,6 +28,8 @@ const tiers = [
       "feedback and support",
       "AI therapeutic chatbot",
       "sleep research article feed",
+      "support for sleep tracking apps",
+      "free updates",
     ],
     featured: true,
   },
